@@ -1,3 +1,11 @@
+# 0.9.8 (February 26, 2026)
+
+- Updated the heading level of some `<header>` tags.
+- Removed a duplicate `<blockquote>` section.
+- Fixed the broken links of HTML images elements.
+- Replaced the deprecated `<input type="datetime">` element with the new `<input type="time">` one.
+- Converted some ASCII text characters in HTML entities.
+
 # 0.9.7 (April 3, 2021)
 
 - Self-close option tags (thanks @ConnorJamesLow!).
