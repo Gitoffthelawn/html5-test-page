@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -83,17 +83,6 @@
             </div>
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
-          <article id="text__blockquotes">
-            <header><h2>Blockquotes</h2></header>
-            <div>
-              <blockquote>
-                <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
-                <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
-                <cite><a href="#!">Said no one, ever.</a></cite>
-              </blockquote>
-            </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
           <article id="text__lists">
             <header><h2>Lists</h2></header>
             <div>
@@ -174,7 +163,7 @@
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__blockquotes">
-            <header><h1>Blockquotes</h1></header>
+            <header><h2>Blockquotes</h2></header>
             <div>
               <blockquote>
                 <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
@@ -185,7 +174,7 @@
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__details">
-            <header><h1>Details / Summary</h1></header>
+            <header><h2>Details / Summary</h2></header>
             <details>
               <summary>Expand for details</summary>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, odio! Odio natus ullam ad quaerat, eaque necessitatibus, aliquid distinctio similique voluptatibus dicta consequuntur animi. Quaerat facilis quidem unde eos! Ipsa.</p>
@@ -193,7 +182,7 @@
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__address">
-            <header><h1>Address</h1></header>
+            <header><h2>Address</h2></header>
             <address>
               Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
               Visit us at:<br>
@@ -312,32 +301,32 @@
               <p>There is comment here: <!--This comment should not be displayed--></p>
               <p>There is a comment spanning multiple tags and lines below here.</p>
               <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
-              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
-              <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
+              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
+              <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
+            <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
         </section>
         <section id="embedded">
-          <header><h2>Embedded content</h2></header>
+          <header><h1>Embedded content</h1></header>
           <article id="embedded__images">
             <header><h2>Images</h2></header>
             <div>
               <h3>Plain <code>&lt;img&gt;</code> element</h3>
-              <p><img src="https://placekitten.com/480/480" alt="Photo of a kitten"></p>
+              <p><img src="https://picsum.photos/480/480" alt="Photo"></p>
               <h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> element</h3>
-              <figure><img src="https://placekitten.com/420/420" alt="Photo of a kitten"></figure>
+              <figure><img src="https://picsum.photos/420/420" alt="Photo"></figure>
               <h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code> elements</h3>
               <figure>
-                <img src="https://placekitten.com/420/420" alt="Photo of a kitten">
+                <img src="https://picsum.photos/420/420" alt="Photo">
                 <figcaption>Here is a caption for this image.</figcaption>
               </figure>
               <h3><code>&lt;figure&gt;</code> element with a <code>&lt;picture&gt;</code> element</h3>
               <figure>
                 <picture>
-                  <source srcset="https://placekitten.com/800/800"
+                  <source srcset="https://picsum.photos/800/800"
                     media="(min-width: 800px)">
-                  <img src="https://placekitten.com/420/420" alt="Photo of a kitten" />
+                  <img src="https://picsum.photos/420/420" alt="Photo" />
                 </picture>
               </figure>
             </div>
@@ -345,7 +334,7 @@
           </article>
           <article id="embedded__bgimages">
             <header><h2>Background images</h2></header>
-            <div style="background-image:url('https://placekitten.com/300/300'); width:300px; height: 300px;"></div>
+            <div style="background-image:url('https://picsum.photos/300/300'); width:300px; height: 300px;"></div>
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="embedded__audio">
@@ -395,7 +384,7 @@
           </article>
         </section>
         <section id="forms">
-          <header><h2>Form elements</h2></header>
+          <header><h1>Form elements</h1></header>
           <form>
             <fieldset id="forms__input">
               <legend>Input fields</legend>
@@ -510,8 +499,8 @@
                 <input type="week" id="idw" value="1970-W01">
               </p>
               <p>
-                <label for="idt">Datetime input</label>
-                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+                <label for="idt">Time input</label>
+                <input type="time" id="idt" name="idt" min="00:00" max="24:00">
               </p>
               <p>
                 <label for="idtl">Datetime-local input</label>
@@ -531,10 +520,10 @@
             <fieldset id="forms__action">
               <legend>Action buttons</legend>
               <p>
-                <input type="submit" value="<input type=submit>">
-                <input type="button" value="<input type=button>">
-                <input type="reset" value="<input type=reset>">
-                <input type="submit" value="<input disabled>" disabled>
+                <input type="submit" value="&lt;input type=submit&gt;">
+                <input type="button" value="&lt;input type=button&gt;">
+                <input type="reset" value="&lt;input type=reset&gt;">
+                <input type="submit" value="&lt;input disabled&gt;" disabled>
               </p>
               <p>
                 <button type="submit">&lt;button type=submit&gt;</button>
